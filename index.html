@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            font-family: sans-serif;
+        }
+        i{
+            background-color: lightgray;
+            padding: 2px 3px;
+        }
+        div{
+            margin: 15px;
+            border:1px solid black;
+            padding: 15px;
+        }
+        .result{
+            font-family: initial;
+            border-bottom: 2px solid lightgray;
+        }
+        button{
+            margin: 5px;
+            padding: 3px;
+        }
+
+        .q3 input{
+            width: 30px;
+            height: 25px;
+            text-align: center;
+        }
+
+        .q4 input{
+            width: 50px;
+            height: 25px;
+            text-align: center;
+        }
+        .q4 p:last-of-type{
+            background-color:lightgray;
+            padding:10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicios de JavaScript</h1><br/>
+    <div class="q1">
+        <p>
+            <b>1.</b> Escribe un programa que le pida al usuario ingresar una frase y la imprima en la consola.
+            <br/><br/>
+            Recuerda que para pedirle al usuario que escriba una frase debes utilizar el método <i>prompt()</i> y para escribir en la consola debes utilizar el método <i>console.log()</i>.
+        </p>
+        <button>Generar palabra</button>
+        <br/>
+        <span>Esta es la palabra: </span><span class="result"></span>
+    </div>
+    <div class="q2">
+        <p>
+            <b>2.</b> Escribe un programa que le pregunte al usuario su nombre e imprima "Hola " seguido del nombre y un signo de exclamación.
+            <br/><br/>
+            Por ejemplo, si el usuario ingresa "Pedro" el programa debe imprimir en la consola "Hola Pedro!".
+        </p>
+        <button>Generar saludo</button>
+        <br/>
+        <span>Esta es la palabra: </span><span class="result"></span>
+    </div>
+    <div class="q3">
+        <p>
+            <b>3.</b> Escribe un programa que le pida al usuario ingresar un número, luego le pide un segundo número, e imprima en la consola la suma de los dos números que ingresó el usuario.
+            <br/><br/>
+        </p>
+        <label>Ingresa el primer número:</label>
+        <input type="text">
+        <label>Ingresa el segundo número:</label>
+        <input type="text">
+
+        <button>Generar suma</button>
+        <br/>
+        <span>el resultado es: </span><span class="result"></span>
+    </div>
+    <div class="q4">
+        <p>
+            <b>4.</b> Escribe un programa que le pida al usuario su año de nacimiento e imprima su edad actual en la consola con la frase "Tienes X años". Por ejemplo, asumiendo que el año actual es 2020 y el usuario ingresa 2000, el programa debe imprimir en la consola:
+            <br/><br/>
+        </p>
+        <p>Tienes 20 años.</p>
+        <label>Ingresa tu año de nacimiento:</label>
+        <input type="text">
+
+        <button>Generar edad</button>
+        <br/>
+        <span>el resultado es: </span><span class="result"></span>
+    </div>
+    <div class="q5">
+        <p>
+            <b>4.</b> Escribe un programa que le pida al usuario su año de nacimiento e imprima su edad actual en la consola con la frase "Tienes X años". Por ejemplo, asumiendo que el año actual es 2020 y el usuario ingresa 2000, el programa debe imprimir en la consola:
+            <br/><br/>
+        </p>
+        <p>Tienes 20 años.</p>
+        <label>Ingresa tu año de nacimiento:</label>
+        <input type="text">
+
+        <button>Generar edad</button>
+        <br/>
+        <span>el resultado es: </span><span class="result"></span>
+    </div>
+
+    <!-- scripts -->
+    <script src="./Src/index.js"></script>
+</body>
+</html>
