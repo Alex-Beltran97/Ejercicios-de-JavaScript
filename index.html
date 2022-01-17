@@ -8,8 +8,19 @@
     <style>
         *{
             margin: 0;
-            padding:0;
+            padding:4px;
             font-family: sans-serif;
+        }
+        h1 i{
+            background-color: white;
+        }
+        a {
+            color: DodgerBlue;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         i{
             background-color: lightgray;
@@ -29,85 +40,268 @@
             padding: 3px;
         }
 
-        .q3 input{
+        input{
             width: 30px;
-            height: 25px;
+            height: 20px;
             text-align: center;
         }
 
-        .q4 input{
-            width: 50px;
-            height: 25px;
-            text-align: center;
-        }
+        
         .q4 p:last-of-type{
             background-color:lightgray;
             padding:10px;
             margin: 5px;
         }
+        .q5 p:nth-child(2){
+            background-color:lightgray;
+            padding:10px;
+            margin: 5px;
+        }
+        
+        .q5 span{
+            padding-top:20px;
+            margin-top:20px;
+        }
+
+        ul{
+            margin-left: 30px;
+            padding-bottom: 15px;
+        }
+
+        .leaves{
+            display: flex;
+            justify-content: center;
+        }
+        .leaves button{
+            margin: 0 10px;
+            padding: 0 15px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .leaves button:hover{
+            margin: 0 10px;
+            padding: 0 15px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .leaves button:focus{
+            border:3px solid  DodgerBlue;
+            color:DodgerBlue;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
-    <h1>Ejercicios de JavaScript</h1><br/>
-    <div class="q1">
-        <p>
-            <b>1.</b> Escribe un programa que le pida al usuario ingresar una frase y la imprima en la consola.
-            <br/><br/>
-            Recuerda que para pedirle al usuario que escriba una frase debes utilizar el método <i>prompt()</i> y para escribir en la consola debes utilizar el método <i>console.log()</i>.
-        </p>
-        <button>Generar palabra</button>
-        <br/>
-        <span>Esta es la palabra: </span><span class="result"></span>
-    </div>
-    <div class="q2">
-        <p>
-            <b>2.</b> Escribe un programa que le pregunte al usuario su nombre e imprima "Hola " seguido del nombre y un signo de exclamación.
-            <br/><br/>
-            Por ejemplo, si el usuario ingresa "Pedro" el programa debe imprimir en la consola "Hola Pedro!".
-        </p>
-        <button>Generar saludo</button>
-        <br/>
-        <span>Esta es la palabra: </span><span class="result"></span>
-    </div>
-    <div class="q3">
-        <p>
-            <b>3.</b> Escribe un programa que le pida al usuario ingresar un número, luego le pide un segundo número, e imprima en la consola la suma de los dos números que ingresó el usuario.
-            <br/><br/>
-        </p>
-        <label>Ingresa el primer número:</label>
-        <input type="text">
-        <label>Ingresa el segundo número:</label>
-        <input type="text">
-
-        <button>Generar suma</button>
-        <br/>
-        <span>el resultado es: </span><span class="result"></span>
-    </div>
-    <div class="q4">
-        <p>
-            <b>4.</b> Escribe un programa que le pida al usuario su año de nacimiento e imprima su edad actual en la consola con la frase "Tienes X años". Por ejemplo, asumiendo que el año actual es 2020 y el usuario ingresa 2000, el programa debe imprimir en la consola:
-            <br/><br/>
-        </p>
-        <p>Tienes 20 años.</p>
-        <label>Ingresa tu año de nacimiento:</label>
-        <input type="text">
-
-        <button>Generar edad</button>
-        <br/>
-        <span>el resultado es: </span><span class="result"></span>
-    </div>
-    <div class="q5">
-        <p>
-            <b>4.</b> Escribe un programa que le pida al usuario su año de nacimiento e imprima su edad actual en la consola con la frase "Tienes X años". Por ejemplo, asumiendo que el año actual es 2020 y el usuario ingresa 2000, el programa debe imprimir en la consola:
-            <br/><br/>
-        </p>
-        <p>Tienes 20 años.</p>
-        <label>Ingresa tu año de nacimiento:</label>
-        <input type="text">
-
-        <button>Generar edad</button>
-        <br/>
-        <span>el resultado es: </span><span class="result"></span>
+    <main class="app">
+        <div class="leaf1">
+    
+            <h1>Ejercicios de JavaScript <i>(1-5)</i> </h1><br/>
+            <p class="repo">
+                Repositorio 
+                <a href="https://github.com/Alex-Beltran97/Ejercicios-de-JavaScript" target="_blank">aquí.</a>
+            </p>
+            <div class="q1">
+                <p>
+                    <b>1.</b> Escribe un programa que le pida al usuario ingresar una frase y la imprima en la consola.
+                    <br/><br/>
+                    Recuerda que para pedirle al usuario que escriba una frase debes utilizar el método <i>prompt()</i> y para escribir en la consola debes utilizar el método <i>console.log()</i>.
+                </p>
+                <button>Generar palabra</button>
+                <br/>
+                <span>Esta es la palabra: </span><span class="result"></span>
+            </div>
+            <div class="q2">
+                <p>
+                    <b>2.</b> Escribe un programa que le pregunte al usuario su nombre e imprima "Hola " seguido del nombre y un signo de exclamación.
+                    <br/><br/>
+                    Por ejemplo, si el usuario ingresa "Pedro" el programa debe imprimir en la consola "Hola Pedro!".
+                </p>
+                <button>Generar saludo</button>
+                <br/>
+                <span>Esta es la palabra: </span><span class="result"></span>
+            </div>
+            <div class="q3">
+                <p>
+                    <b>3.</b> Escribe un programa que le pida al usuario ingresar un número, luego le pide un segundo número, e imprima en la consola la suma de los dos números que ingresó el usuario.
+                    <br/><br/>
+                </p>
+                <label>Ingresa el primer número:</label>
+                <input type="text" value="0">
+                <label>Ingresa el segundo número:</label>
+                <input type="text" value="0">
+        
+                <button>Generar suma</button>
+                <br/>
+                <span>el resultado es: </span><span class="result"></span>
+            </div>
+            <div class="q4">
+                <p>
+                    <b>4.</b> Escribe un programa que le pida al usuario su año de nacimiento e imprima su edad actual en la consola con la frase "Tienes X años". Por ejemplo, asumiendo que el año actual es 2020 y el usuario ingresa 2000, el programa debe imprimir en la consola:
+                    <br/><br/>
+                </p>
+                <p>Tienes 20 años.</p>
+                <label>Ingresa tu año de nacimiento:</label>
+                <input type="number " value="0" min="0" max="100">
+        
+                <button>Generar edad</button>
+                <br/>
+                <span>el resultado es: </span><span class="result"></span>
+            </div>
+            <div class="q5">
+                <p>
+                    <b>5.</b> El índice de masa corporal (IMC), o BMI por sus siglas en inglés, es un valor que determina la cantidad 
+                    de grasa de una persona.
+                    <br/><br/>
+                    El BMI se calcula con la siguiente formula:
+                    <br/><br/>
+                </p>
+                <p>peso / altura^2</p>
+                <br/><br/>
+                <p>
+                    Escribe un programa que le pida al usuario su peso y su altura para calcular su BMI e imprima la frase "Tu BMI es X".
+                    <br/><br/>
+                    Por ejemplo, si el usuario ingresa 65 de peso y 1.8 de altura el programa debe imprimir en la consola la frase "Tu BMI es 20.061728395061728".
+                    <br/><br/>
+                </p>
+                <label>Ingresa el peso:</label>
+                <input type="text" value="0">
+                <label>Ingresa la altura:</label>
+                <input type="text" value="0">
+        
+                <button>Generar BMI</button>
+                <br/>
+                <span>el resultado es: <span class="result"></span></span>
+            </div>
+        </div>
+        <div class="leaf2">
+            <h1>Ejercicios de JavaScript <i>(6-11)</i> </h1><br/>
+            <p class="repo">
+                Repositorio 
+                <a href="https://github.com/Alex-Beltran97/Ejercicios-de-JavaScript" target="_blank">aquí.</a>
+            </p>
+            <div class="q6">
+                <p>
+                    <b>6.</b> Escribe un programa que le pida un número al usuario e imprima en la consola si el número es mayor o menor/igual a 10.
+                    <br/><br/>
+                    Si es mayor debe imprimir "El número es mayor a 10".
+                    <br/><br/>
+                    Si es menor debe imprimir "El número es menor o igual a 10".
+                    <br/><br/>
+                </p>
+                <label>Ingresa el número:</label>
+                <input type="text" value="0">
+                <button>Generar número</button>
+                <br/>
+                <span>Esta es la palabra: </span><span class="result"></span>
+            </div>
+            <div class="q7">
+                <p>
+                    <b>7.</b> Escribe un programa que piense un número de forma aleatoria del 1 al 10 y le pida al 
+                    usuario que lo trate de adivinar. Si el número es correcto debe imprimir en la consola 
+                    "Felicitaciones, ese era!", de lo contrario debe imprimir "Lo siento, intenta nuevamente!"
+                    <br/><br/>
+                </p>
+                <label>Ingresa el número:</label>
+                <input type="text" value="0" style="background-color: none">
+                <button>Generar número</button>
+                <br/>
+                <span>Esta es la palabra: </span><span class="result"></span>
+            </div>
+            <div class="q8">
+                <p>
+                    <b>8.</b> Un múltiplo de 5 es aquel que dividido por 5 da por resultado un número entero 
+                    (sin residuo). Por ejemplo 10, 15, 20, etc. son múltiplos de 5. 11 no es múltiplo de 5 porque quedaría un residuo de 1.
+                    <br/><br/>
+                    Escribe un programa que le pida al usuario un número e imprima si es un múltiplo de 5 o no.
+                    <br/><br/>
+                    Si es múltiplo debe imprimir "Si, el número x es múltiplo 5", de lo contrario debe imprimir "No, el número x no es múltiplo de 5".
+                    <br/><br/>
+                </p>
+                <label>Ingresa el número:</label>
+                <input type="text" value="0" style="background-color: none">
+                <button>Generar número</button>
+                <br/>
+                <span>Esta es la palabra: </span><span class="result"></span>
+            </div>
+            <div class="q9">
+                <p>
+                    <b>9.</b> Escribe un programa que le pida un número al usuario e imprima en la consola si el número si es mayor, menor o igual que 10.
+                    <br/><br/>
+                    Si el número es menor a 10 debe imprimir "El número es menor que 10".
+                    <br/><br/>
+                    Si el número es mayor a 10 debe imprimir "El número es mayor que 10".
+                    <br/><br/>
+                    Si el número es igual a 10 debe imprimir "El número es igual a 10".
+                    <br/><br/>
+                </p>
+                <label>Ingresa el número:</label>
+                <input type="text" value="0">
+                <button>Generar número</button>
+                <br/>
+                <span>Esta es la palabra: </span><span class="result"></span>
+            </div>
+            <div class="q10">
+                <p>
+                    <b>10.</b> El índice de masa corporal (IMC), o BMI por sus siglas en inglés, es un valor que determina
+                    la cantidad de grasa de una persona.
+                    <br/><br/>
+                    El BMI se calcula con la siguiente formula:
+                    <br/><br/>
+                </p>
+                <p>peso / altura^2</p>
+                <br/><br/>
+                Escribe un programa que le pida al usuario su peso y altura. El programa deberá calcular el BMI e imprimir:
+                <br/><br/>
+                    <ul>
+                        <li>"Bajo de peso" si el BMI < 18.5</li>
+                        <li>"Normal" si está entre 18.5 y 24.9</li>
+                        <li>"Sobrepeso" si está entre 25 y 29.9</li>
+                        <li>"Obeso" si es igual o mayor a 30</li>
+                    </ul>
+                <label>Ingresa el peso:</label>
+                <input type="text" value="0">
+                <label>Ingresa la altura:</label>
+                <input type="text" value="0">
+        
+                <button>Generar BMI</button>
+                <br/>
+                <span>el resultado es: <span class="result"></span></span>
+            </div>
+            <div class="q11">
+                <p>
+                    <b>11.</b> Escribe un programa que le pida al usuario ingresar un número.
+                    <br/><br/>
+                    <ul>
+                        <li>Si el número es múltiplo de 3 debe imprimir en la consola "bing".</li>
+                        <li>Si el número es múltiplo de 5 debe imprimir en la consola "bong".
+                        </li>
+                        <li>Si el número es múltiplo tanto de 3 como de 5 debe imprimir en la consola "bingbong".
+                        </li>
+                        <li>Si no cumple ninguna de las condiciones anteriores debe imprimir el mismo número.
+                        </li>
+                    </ul>
+                </p>
+                <label>Ingresa el número:</label>
+                <input type="text" value="0">
+                <button>Generar número</button>
+                <br/>
+                <span>Esta es la palabra: </span><span class="result"></span>
+            </div>
+        </div>
+    </main>
+    <div class="leaves">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
     </div>
 
     <!-- scripts -->
